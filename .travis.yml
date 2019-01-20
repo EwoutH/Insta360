@@ -1,13 +1,9 @@
 language: java
 
-build: false
-
 jobs:
   include:
-    - script: 
-      - gradle check
-      - gradle assemble
-    - script: 
-      - ./gradlew check
-      - ./gradlew assemble
+    - name: gradle
+      script: gradle check & gradle assemble
+    - name: gradlew
+      script: ./gradlew check & ./gradlew assemble
       
