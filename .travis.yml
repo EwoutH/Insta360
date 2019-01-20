@@ -1,5 +1,7 @@
 language: java
 
+build: false
+
 jobs:
   include:
     - script: 
