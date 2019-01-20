@@ -2,10 +2,10 @@ language: java
 
 jobs:
   include:
-    script: 
+    - script: 
       - gradle check
       - gradle assemble
-    script: 
+    - script: 
       - ./gradlew check
       - ./gradlew assemble
       
